@@ -1,66 +1,141 @@
 # Day 01 — TryHackMe Pre Security
 
-## Topic
+**Path:** TryHackMe Pre Security
+**Day:** 01
+**Topics Completed:** Client-Server Basics, Virtualisation Basics
 
-About Client-Server Basics and Virtualisation Basics
+---
 
-## What I Learned
+## 1. Client-Server Basics
 
-Today I learned the basics of Client-Server and Virtualisation
+Today I learned the basic concept of how clients and servers communicate with each other.
 
-### 1. Client
+### Client
 
-A client is a device/application that requests a service.
+A client is a device or application that requests a service or resource from a server.
 
-Example:
+Examples:
 
-- My laptop
-- My phone
-- Web browser
+* Laptop
+* Mobile phone
+* Web browser
 
-### 2. Server
+### Server
 
-A server provides services or resources to clients.
+A server is a computer/system that provides services or resources to clients.
 
-Example:
+Examples:
 
-- Web server
-- Email server
-- DNS server
+* Web server
+* File server
+* Database server
+* Email server
 
-### 3. IP Address
+### Basic Communication
 
-An IP address identifies a device on a network.
+The basic process is:
 
-Example:
+**Client → Request → Server → Response → Client**
 
-192.168.1.10
+For example, when I open a website:
 
-### 4. DNS
+1. My browser acts as a client.
+2. The browser sends a request to the web server.
+3. The server processes the request.
+4. The server sends a response.
+5. The browser displays the website.
 
-DNS converts domain names into IP addresses.
+### Important Terms
 
-Example:
+* Client
+* Server
+* Request
+* Response
+* Web server
+* Network
 
-google.com → IP address
+---
 
-### 5. Virtualisation 
+## 2. Virtualisation Basics
 
-Virtualisation means multiple applications can share single physical server safely.
-A virtualisation layer, called a hypervisor, act as a referee between lab machines and allow each virtual computer to behave independently, like a physical computer.
+I also learned the basic concept of virtualisation.
 
-Components in Virtualisation 
-1. Hypervisor (Building Manager)
-2. Lab Machines (Apartments)
-3. Containers (Rooms inside the Apartments)
+Virtualisation allows us to create a virtual computer/system inside a physical computer.
 
+### Physical Machine
 
+The actual computer on which the virtual machines run is called the **host**.
 
+### Virtual Machine
 
-TryHackMe
+A virtual computer created inside the host computer is called a **Virtual Machine (VM)**.
 
-Path: Pre Security
+The VM can have its own:
 
-Room: Client-Server Basics and Virtualisation Basics
+* Operating system
+* CPU resources
+* Memory
+* Storage
+* Network configuration
 
-Status: Completed
+### Hypervisor
+
+A hypervisor is software that allows virtual machines to run on a physical computer.
+
+It manages the resources given to each virtual machine.
+
+### Why Virtualisation Is Useful
+
+Virtualisation allows us to:
+
+* Run multiple operating systems on one physical computer.
+* Create isolated environments.
+* Test software safely.
+* Build cybersecurity labs.
+* Practice Linux and security tools without affecting the main system.
+
+### Important Terms
+
+* Host machine
+* Virtual Machine (VM)
+* Hypervisor
+* Guest operating system
+* Virtualisation
+
+---
+
+## What I Learned Today
+
+Today I understood two important concepts:
+
+1. How clients and servers communicate.
+2. How virtual machines allow us to run separate computer environments on one physical machine.
+
+These concepts are important foundations for learning networking and cybersecurity.
+
+---
+
+## Things I Need to Revise
+
+* Client vs Server
+* Request and Response
+* Host vs Virtual Machine
+* Hypervisor
+* Types of virtualisation
+
+---
+
+## TryHackMe Progress
+
+**Pre Security Path**
+
+* [x] Client-Server Basics
+* [x] Virtualisation Basics
+
+**Day 01 Status: Completed ✅**
+
+---
+
+## Next Goal
+
+Continue with the next section of the TryHackMe Pre Security path and keep building my networking and cybersecurity fundamentals.
